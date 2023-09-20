@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX 1000
+#define MAX 100
 
 int main(void)
 {
@@ -10,12 +10,12 @@ int main(void)
         arr[i] = arc4random_uniform(MAX + 1);
 
     //sorting the array
-    // Ascending sort
+    // Descending sort
     for (int i = 0; i < MAX; i++)
     {
         for (int j = i + 1; j < MAX; j++)
         {
-            if (arr[j] < arr[i])
+            if (arr[j] > arr[i])
             {
                 int temp = arr[j];
                 arr[j] = arr[i];
@@ -23,12 +23,6 @@ int main(void)
             }
         } 
     }
-
-    for (int i = 0; i < MAX; i++)
-        printf("%d ", arr[i]);
-    
-    // Descending sort
-    for () 
 
     for (int i = 0; i < MAX; i++)
         printf("%d ", arr[i]);
